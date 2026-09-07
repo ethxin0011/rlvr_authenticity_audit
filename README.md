@@ -69,13 +69,7 @@ budget is available.
 │   ├── exploitation_gap.png
 │   └── exploitation_gap_by_domain.png
 │
-└── paper/                             # arXiv submission source (ACL-style LaTeX)
-    ├── main.tex
-    ├── tables.tex
-    ├── tables_appendix.tex
-    ├── references.bib
-    ├── acl.sty
-    └── figures/
+└──
 ```
 
 ## Pipeline overview
@@ -118,5 +112,4 @@ budget is available.
 
 ## Citing this work
 
-See `paper/main.tex` for the full write-up, and `results/final_report.md` for the underlying
-numbers this repo produced.
+
