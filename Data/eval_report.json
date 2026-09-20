@@ -1,0 +1,62 @@
+{
+  "treatment": {
+    "overall": {
+      "original": 0.2833333333333333,
+      "neutralized": 0.21222222222222223,
+      "adversarial": 0.19111111111111112
+    },
+    "per_domain": {
+      "original": {
+        "math": 0.15333333333333332,
+        "code": 0.3,
+        "stem": 0.39666666666666667
+      },
+      "neutralized": {
+        "math": 0.10333333333333333,
+        "code": 0.22,
+        "stem": 0.31333333333333335
+      },
+      "adversarial": {
+        "math": 0.13666666666666666,
+        "code": 0.18666666666666668,
+        "stem": 0.25
+      }
+    },
+    "artifact_exploitation_gap": 0.02111111111111111,
+    "artifact_exploitation_gap_by_domain": {
+      "stem": 0.06333333333333335,
+      "code": 0.033333333333333326,
+      "math": -0.033333333333333326
+    }
+  },
+  "control": {
+    "overall": {
+      "original": 0.29888888888888887,
+      "neutralized": 0.23333333333333334,
+      "adversarial": 0.20666666666666667
+    },
+    "per_domain": {
+      "original": {
+        "math": 0.16666666666666666,
+        "code": 0.33,
+        "stem": 0.4
+      },
+      "neutralized": {
+        "math": 0.12333333333333334,
+        "code": 0.2633333333333333,
+        "stem": 0.31333333333333335
+      },
+      "adversarial": {
+        "math": 0.15,
+        "code": 0.20666666666666667,
+        "stem": 0.2633333333333333
+      }
+    },
+    "artifact_exploitation_gap": 0.026666666666666672,
+    "artifact_exploitation_gap_by_domain": {
+      "stem": 0.050000000000000044,
+      "code": 0.05666666666666664,
+      "math": -0.026666666666666658
+    }
+  }
+}
