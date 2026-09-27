@@ -1,0 +1,96 @@
+{
+  "adapter_file_hashes": {
+    "treatment": {
+      "adapter_model.safetensors": {
+        "md5": "86c1f25adbc79c1df61fb1cc3541317c",
+        "size_bytes": 25720120
+      },
+      "training_args.bin": {
+        "md5": "03b1f7944e96d1fe373e201b2b593ca5",
+        "size_bytes": 5688
+      }
+    },
+    "control": {
+      "adapter_model.safetensors": {
+        "md5": "df30e299062e56d8ae279562948d5dce",
+        "size_bytes": 25720120
+      },
+      "training_args.bin": {
+        "md5": "8fff07846bc9579abe41aeeddabc4e50",
+        "size_bytes": 5688
+      }
+    }
+  },
+  "identical_adapter_files": [],
+  "raw_completions_sample": [
+    {
+      "domain": "math",
+      "correct_letter": "A",
+      "prompt_preview": "Read the options below and identify which one is correct. Respond with ONLY the letter of the correct option.\n\nA. 2. Add the number of bags delivered on Monday: $9 + 17 = 26$.\n3. Add the number of bags delivered on Tuesday: $26 + 22 = 48$.\n4. Add the number of bags delivered on Wednesday: $48 + 3 = ",
+      "treatment_raw": "<think>\nOkay, let's see. The question is about identifying the correct option among A, B, C, D. Each option has steps showing additions of",
+      "control_raw": "<think>\nOkay, let's see. The question is about adding up the number of bags delivered each day and choosing the correct option. The options A, B",
+      "identical_output": false
+    },
+    {
+      "domain": "math",
+      "correct_letter": "D",
+      "prompt_preview": "Read the options below and identify which one is correct. Respond with ONLY the letter of the correct option.\n\nA. 2. It is known that \\prod_{n=3}^{\\infty}\\sec{\\frac{\\pi}{n}} = K, where K is the polygon circumscribing constant.\n3. The value of K is approximately:\n   \\[K \\approx 9.00000000000000000000",
+      "treatment_raw": "00000000000000000000000000000000",
+      "control_raw": "00000000000000000000000000000000",
+      "identical_output": true
+    },
+    {
+      "domain": "code",
+      "correct_letter": "A",
+      "prompt_preview": "Read the options below and identify which one is correct. Respond with ONLY the letter of the correct option.\n\nA. for d, r in projects:\n        for j in range(t, d - 1, -1):\n            if dp[j - d] + r > dp[j]:\n                dp[j] = dp[j - d] + r\nB. for d, r in projects:\n        for j in range(t,",
+      "treatment_raw": "<think>\nOkay, let's try to figure out which of these options is correct. The question is about a dynamic programming problem, probably related to the classic \"",
+      "control_raw": "<think>\nOkay, let's try to figure out which of these options is correct. The question is about a dynamic programming problem, probably related to the classic \"",
+      "identical_output": true
+    },
+    {
+      "domain": "stem",
+      "correct_letter": "A",
+      "prompt_preview": "Read the options below and identify which one is correct. Respond with ONLY the letter of the correct option.\n\nA. - Gyroscopic effect: The spinning top resists falling due to angular momentum conservation. The torque \u03c4 does not make the top topple; instead, it causes precession (a slow rotation of t",
+      "treatment_raw": "<think>\nOkay, let's try to figure out which option is correct here. The question is about gyroscopic effects, precession, and stability conditions for a",
+      "control_raw": "<think>\nOkay, let's try to figure out which option is correct here. The question is about gyroscopic effects, precession, and stability conditions for a",
+      "identical_output": true
+    },
+    {
+      "domain": "stem",
+      "correct_letter": "D",
+      "prompt_preview": "Read the options below and identify which one is correct. Respond with ONLY the letter of the correct option.\n\nA. ### Step 3: Calculate the Speed of the Light Signal as Measured by the Earth Observer\nAssume time dilation reduces the effective speed:\n- Speed of the light signal (u): The observer on E",
+      "treatment_raw": " the Earth, u = c \u2212 v = c \u2212 0.5c = 0.5c\n\nMathematically:\n- u = 0",
+      "control_raw": " the Earth, u = c \u2212 v = c \u2212 0.5c = 0.5c\n\nMathematically:\n- u = 0",
+      "identical_output": true
+    }
+  ],
+  "raw_completions_summary": {
+    "treatment": {
+      "n": 15,
+      "empty_or_whitespace": 0,
+      "contains_valid_letter_anywhere": 13,
+      "first_char_distribution": {
+        "<": 9,
+        "0": 1,
+        "t": 1,
+        "O": 1,
+        "\\": 1,
+        "8": 2
+      }
+    },
+    "control": {
+      "n": 15,
+      "empty_or_whitespace": 0,
+      "contains_valid_letter_anywhere": 13,
+      "first_char_distribution": {
+        "<": 9,
+        "0": 1,
+        "t": 1,
+        "O": 1,
+        "\\": 1,
+        "8": 2
+      }
+    },
+    "identical_outputs_between_policies": "12/15"
+  }
+}
